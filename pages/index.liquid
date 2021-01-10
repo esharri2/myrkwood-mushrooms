@@ -1,25 +1,55 @@
-<div
-    class="container">
-    <h1>{{site.title}}
-    </h1>
+---
+section-padding: py-6 px-2
+---
+<section
+    class="min-h-screen bg-accent-1 {{section-padding}}"
+    name="splash">
     <div
-        class="my-4">
-        {% picture 'images/beach.JPG' 'A beach pic' %}
-    </div>
-
-    <p>Curabitur at lacus ac velit ornare lobortis.
-    </p>
-    <p>Donec venenatis vulputate lorem. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Proin magna.
-    </p>
-    <p>Etiam iaculis nunc ac metus. Sed aliquam ultrices mauris. .Eget, lobortis pellentesque, rutrum eu, nisl. Proin magna.
-    </p>
-
-    <p
-        class="font-body pt-4">This is a simple Eleventy starter. It uses plain JavaScript templates and TailwindCSS.
+        class="max-w-screen-md w-full mx-auto">
+        <img
+            class="w-full animate-fade-in"
+            src="images/logo_CW.svg">
+        <p
+            class="font-display py-4 text-xl text-center sm:text-2xl">Backyard mushroom gardens in central NC
+        </p>
         <a
-            class="underline"
-            href="https://github.com/esharri2/ev-eleventy-starter">Check out the notes here.
+            class="w-5 py-4 block mx-auto animate-pulse"
+            href="#about"><img
+                src="images/down.svg">
         </a>
-
-    </p>
-</div>
+    </div>
+</section>
+<section
+    class="min-h-screen bg-light {{section-padding}}"
+    id="about">
+    <div
+        class="container  max-w-screen-lg flex">
+        <div
+            class="flex-1">
+            <h1>Welcome to Myrkwood.
+            </h1>
+            <p>We can help you install and cultivate your very own sustainable mushroom garden. From simple mushroom logs and beds to large scale permaculture projects, our 10+ years of experience will yield you results time and time again.
+            </p>
+            <p>
+                Myrkwood (Old Norse, "dark wood" or "black forest”) is the wild, primitive forest of ancient Europe. In the Norse tradition, 'crossing the Black Forest' came to signify penetrating the barriers between one world and another, especially the world of the gods and the world of fire. In this sense, we at Myrkwood Mushrooms aim to connect you with the joy and benefits of experiencing the natural world, right in your own backyard.
+            </p>
+            <p>Fungi are essential for soil health and fertility, the growth of plants, and for the decomposition of wood and other organic matter. Not only are fungi ecological workhorses, but their fruits, mushrooms, are fun and easy to grow – providing delicious food and beneficial medicines to humans.
+            </p>
+        </div>
+        <div
+            class="flex-1">
+            {% picture 'images/placeholder.jpg' 'alt text'%}
+        </div>
+    </div>
+</section>
+<section
+    class="min-h-screen {{section-padding}}"
+    id="how-it-works">
+    <h1>How it works
+    </h1>
+</section>
+<section
+    class="min-h-screen {{section-padding}}"
+    id="contact">
+    {% render 'contact-form'%}
+</section>

@@ -1,6 +1,5 @@
 [
-  { "key": "/", "title": "Home" },
-  { "key": "/about", "title": "About" },
-  { "key": "/blog", "title": "Blog" },
-  { "key": "/contact", "title": "Contact" }
+  { "key": "#about", "title": "About" },
+  { "key": "#how-it-works", "title": "How it works" },
+  { "key": "#contact", "title": "Contact" }
 ]

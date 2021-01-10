@@ -1,6 +1,6 @@
 <nav>
     <ul
-        class="flex">
+        class="flex font-display capitalize sm:text-2xl">
         {% for item in navigation %}
             {% if page.filePathStem == item.key %}
                 {% assign activeClasses = 'underline'%}
@@ -10,7 +10,7 @@
                 {% assign currentAttribute = null %}
             {% endif %}
             <li
-                class="p-4 {{activeClasses}}"
+                class="p-2 text-center {{activeClasses}}"
                 {{currentAttribute}}>
                 <a
                     href="{{item.key}}">{{item.title}}

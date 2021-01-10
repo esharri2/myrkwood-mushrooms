@@ -1,6 +1,8 @@
 const colors = {
-  spaceCadet: "#2E294E",
-  babyPink: "#E8C1C5",
+  pistachio: "#93c47d",
+  black: "#000000",
+  languidLavender: "#DFD9E2",
+  burntUmber: "#7C3626",
 };
 
 module.exports = {
@@ -9,16 +11,19 @@ module.exports = {
   },
   theme: {
     colors: {
-      dark: colors.spaceCadet,
-      light: colors.babyPink,
+      dark: colors.black,
+      light: colors.languidLavender,
+      "accent-1": colors.pistachio,
+      "accent-2": colors.burntUmber,
     },
     container: {
       center: true,
-      padding: '2rem'
+      padding: "2rem",
     },
     fontFamily: {
-      display: ["Manrope", "sans-serif"],
-      body: ["Overpass", "Helvetica", "sans-serif"],
+      logo: ["Pirata One", "serif"],
+      display: ["Fraunces", "serif"],
+      body: ["Lato", "Helvetica", "sans-serif"],
     },
     screens: {
       sm: "480px",
@@ -27,6 +32,7 @@ module.exports = {
       xl: "1440px",
     },
     spacing: {
+      0: "0",
       1: ".5rem",
       2: "1rem",
       3: "1.5rem",
@@ -34,8 +40,18 @@ module.exports = {
       5: "4rem",
       6: "6rem",
       7: "8rem",
-      8: "10rem"
+      8: "10rem",
     },
-    extend: {},
+    extend: {
+      animation: {
+        'fade-in': 'fadeIn .5s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0, transform: 'translateY(30px)' },
+          "100%": { opacity: 1, transform: 'translateY(0px)' },
+        },
+      },
+    },
   },
 };

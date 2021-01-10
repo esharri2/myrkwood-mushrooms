@@ -1,4 +1,4 @@
 [
-  { "key": "/about", "title": "About" },
-  { "key": "/contact", "title": "Contact" }
+  { "key": "#about", "title": "About" },
+  { "key": "#contact", "title": "Contact" }
 ]

@@ -1,17 +1,17 @@
-<html class="font-body text-dark bg-light">
+<html class="font-body text-dark bg-light overscroll-contain">
     {% render 'head', site: data.site %}
     <body
         class="relative">
         {% render 'skip-to-content' %}
         {% render 'back-to-top' %}
-        <header>
+        <header class="bg-accent-1">
             <div
-                class="container">
+                class="container flex justify-center items-center flex-wrap">
                 {% render 'navigation', navigation: navigation, page: page %}
             </div>
         </header>
         <main
-            class="min-h-screen mt-4 mb-6"
+            class="min-h-screen"
             id="main">
             {{ content }}
         </main>
