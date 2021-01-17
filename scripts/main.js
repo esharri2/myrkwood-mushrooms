@@ -1,3 +1,7 @@
-import backToTop from "./backToTop.js";
+// import backToTop from "./backToTop.js";
+import nav from "./nav.js";
 
-backToTop();
+nav();
+// backToTop();
+
+console.log("test");

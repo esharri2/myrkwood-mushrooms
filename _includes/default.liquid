@@ -3,10 +3,10 @@
     <body
         class="relative">
         {% render 'skip-to-content' %}
-        {% render 'back-to-top' %}
-        <header class="bg-accent-1">
+        {% render 'ie-notice' %}
+        <header class="bg-accent-1 fixed top-0 right-0 left-0 z-20">
             <div
-                class="container flex justify-center items-center flex-wrap">
+                class="flex justify-center items-center flex-wrap">
                 {% render 'navigation', navigation: navigation, page: page %}
             </div>
         </header>
@@ -15,6 +15,6 @@
             id="main">
             {{ content }}
         </main>
-        {% render 'footer', builtBy: site.builtBy, navigation: navigation_footer %}
+        {% render 'footer', title: site.title, builtBy: site.builtBy, navigation: navigation_footer %}
     </body>
 </html>

@@ -1,55 +1,142 @@
 ---
-section-padding: py-6 px-2
+prices:
+  - title: "Old Faithful"
+    price: "$200"
+    description:
+      '4x6 ft. mushroom bed constructed from high quality, naturally rot-resistant cedar planks. Used for the cultivation of oyster mushrooms, wine caps, or wood blewits. Fruits in a little as 6 weeks.'
+  - title: "Myrkwood Logs"
+    price: "$50/log"
+    description:
+      "3-4 ft. hand cut and selected local hardwood (oak or maple) logs pre-drilled and inoculated with lion’s mane or shitake spawn. Fruits for 2-4 years."
+  - title: "Custom permaculture"
+    price: "$20/hr + materials"
+    description:
+      "Specialty mushroom species, fruit trees, vegetables, herbs, and medicinal plants design and installation."
+  - title: "Cultivation and post-harvest mentorship"
+    price: "$20/hr + materials"
+    description:
+      "Instruction, advice, and demonstration of proper mushroom cultivation techniques (sterile technique, agar work, strain isolation, culture transfers), preservation (drying, pickling, canning), and medicine making (tinctures, salves, other extractions)."
+sidePadding: px-1
 ---
 <section
-    class="min-h-screen bg-accent-1 {{section-padding}}"
-    name="splash">
+    class="min-h-screen bg-accent-1 pt-5 pb-6 px-0 relative"
+    id="splash">
     <div
-        class="max-w-screen-md w-full mx-auto">
+        class="max-w-screen-md w-full mx-auto relative z-10 px-1">
+        <h1
+            class="sr-only">Myrkwood Mushrooms
+        </h1>
         <img
-            class="w-full animate-fade-in"
-            src="images/logo_CW.svg">
+            class="animate-fade-in w-full max-w-screen-sm mx-auto xl:max-w-screen-md"
+            src="images/logo_CW.svg" />
         <p
-            class="font-display py-4 text-xl text-center sm:text-2xl">Backyard mushroom gardens in central NC
+            class="font-display py-4 text-2xl text-center sm:text-2xl">Backyard mushroom gardens in the Triangle, NC
         </p>
-        <a
-            class="w-5 py-4 block mx-auto animate-pulse"
-            href="#about"><img
-                src="images/down.svg">
+        <p
+            class="font-display p-0 text-center uppercase">Raleigh | Durham | Cary
+        </p>
+        <a class="w-4 animate-spring pt-5 block mx-auto" href="#about">
+            <img src="images/down.svg" />
         </a>
     </div>
+    <img src="images/straw.jpg" class="absolute top-0 w-full background hidden" />
+
 </section>
 <section
-    class="min-h-screen bg-light {{section-padding}}"
+    class="min-h-screen bg-light {{sidePadding}} pt-7"
     id="about">
     <div
-        class="container  max-w-screen-lg flex">
+        class="container flex flex-col lg:flex-row lg:items-center">
         <div
-            class="flex-1">
-            <h1>Welcome to Myrkwood.
-            </h1>
-            <p>We can help you install and cultivate your very own sustainable mushroom garden. From simple mushroom logs and beds to large scale permaculture projects, our 10+ years of experience will yield you results time and time again.
-            </p>
+            class="flex-1 pb-2">
+            {% render 'h2', text:"Welcome to Myrkwood."%}
             <p>
-                Myrkwood (Old Norse, "dark wood" or "black forest”) is the wild, primitive forest of ancient Europe. In the Norse tradition, 'crossing the Black Forest' came to signify penetrating the barriers between one world and another, especially the world of the gods and the world of fire. In this sense, we at Myrkwood Mushrooms aim to connect you with the joy and benefits of experiencing the natural world, right in your own backyard.
+                Myrkwood (Old Norse, "dark wood" or "black forest”) is the wild, primitive forest of ancient Europe. In
+                the Norse tradition, "crossing the Black Forest" came to signify penetrating the barriers between one
+                world and another. In this sense, Myrkwood
+                Mushrooms aims to connect you with the joy and benefits of the natural world, right in your
+                own backyard.
             </p>
-            <p>Fungi are essential for soil health and fertility, the growth of plants, and for the decomposition of wood and other organic matter. Not only are fungi ecological workhorses, but their fruits, mushrooms, are fun and easy to grow – providing delicious food and beneficial medicines to humans.
+            <p>Fungi are essential for soil health, the growth of plants, and for the decomposition of
+                wood and other organic matter. Not only are fungi ecological workhorses, but their fruits, mushrooms,
+                are fun and easy to grow, providing delicious food and beneficial medicines.
+            </p>
+            <p>We can help you install and cultivate your very own sustainable mushroom garden. From simple mushroom
+                logs and beds to large scale permaculture projects, our 10+ years of experience will yield you results
+                time and time again.
             </p>
         </div>
         <div
-            class="flex-1">
-            {% picture 'images/placeholder.jpg' 'alt text'%}
+            class="flex-1 py-4 lg:pl-5">
+            {% picture 'images/placeholder.jpg' 'alt text' 'shadow rounded-sm'%}
+        </div>
+    </div>
+    <div
+        class="container flex flex-col lg:flex-row lg:items-center">
+        <div
+            class="flex-1 lg:order-2">
+            {% render 'h3', text: "Meet the mushroom guru." %}
+            <p>
+                Charlie, owner and operator of Myrkwood Mushrooms, holds a doctorate in Plant & Microbial Biology from
+                NC State University (2020). An ethnobotanist
+                by training, Charlie is an expert in the traditional usage of medicinal plants and fungi by cultures
+                throughout the world. He has nearly 10 years of horticulture and mushroom growing experience and
+                currently works as an arborist for Bartlett Tree Experts.
+            </p>
+        </div>
+        <div
+            class="flex-1 py-4 lg:pr-5 lg:order-1">
+            {% picture'images/placeholder.jpg' 'alt text' 'shadow rounded-sm' %}
         </div>
     </div>
 </section>
 <section
-    class="min-h-screen {{section-padding}}"
+    class="min-h-screen {{sidePadding}} pt-6 pb-6"
     id="how-it-works">
-    <h1>How it works
-    </h1>
+    <div
+        class="container flex flex-col lg:flex-row lg:items-center">
+        <div
+            class="flex-1 lg:px-4">
+            {% render 'h2', text: "How it works"%}
+            <ol
+                class="list-decimal pl-2 text-l">
+                <li>Schedule a visit or virtual consultation to assess the property, determine what you want to grow, and develop
+                    a plan for the garden.
+                </li>
+                <li>Choose an installation date to build and inoculate the garden.
+                </li>
+                <li>Opt for periodic maintenance. We keep an open door for you to join in for a hands-on experience
+                    anytime you like.
+                </li>
+                <li>When it comes time to harvest, receive mentorship for proper use of your mushrooms.
+                </li>
+            </ol>
+        </div>
+        <div
+            class="flex-1 py-4 lg:pr-5 lg:order-1">
+            {% picture'images/placeholder.jpg' 'alt text' 'shadow rounded-sm' %}
+        </div>
+    </div>
+    <div
+        class="container flex flex-col lg:flex-row lg:items-center">
+        <div
+            class="flex-1 lg:px-4">
+            {% render 'h3', text: "Plans and prices"%}
+            <div class="grid grid-cols-1 grid-rows-none md:grid-cols-2 md:grid-rows-2 gap-3">
+            {% for service in prices %}
+                {% render 'price-card', title: service.title, price: service.price, description: service.description %}
+            {% endfor %}
+            </div>
+        </div>
+    </div>
 </section>
 <section
-    class="min-h-screen {{section-padding}}"
+    class="min-h-screen  {{sidePadding}} py-6"
     id="contact">
-    {% render 'contact-form'%}
+    <div
+        class="container max-w-screen-md flex flex-col justify-center
+            items-center">
+        {% render 'h2', text: "Get in touch.", classes: "text-center" %}
+        {% render 'contact-form'%}
+    </div>
 </section>

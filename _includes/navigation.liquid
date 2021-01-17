@@ -1,6 +1,6 @@
 <nav>
     <ul
-        class="flex font-display capitalize sm:text-2xl">
+        class="flex font-display uppercase sm:text-xl">
         {% for item in navigation %}
             {% if page.filePathStem == item.key %}
                 {% assign activeClasses = 'underline'%}

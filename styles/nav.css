@@ -1,0 +1,16 @@
+/* TODO use apply */
+
+nav a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  transform: translateX(100%);
+  transition: transform .2s, width .2s;
+}
+
+nav a.active:after {
+  @apply bg-dark;
+  width: 100%;
+  transform: translateX(0);
+}

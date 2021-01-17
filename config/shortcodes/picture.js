@@ -3,7 +3,7 @@ const Image = require("@11ty/eleventy-img");
 const picture = (eleventyConfig) => {
   eleventyConfig.addShortcode(
     "picture",
-    async function (src, alt, sizes = "100vw", lazy = true) {
+    async function (src, alt, classes = "", sizes = "100vw", lazy = true) {
       if (alt === undefined)
         throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
 
@@ -27,6 +27,7 @@ const picture = (eleventyConfig) => {
         })
         .join("\n")}
         <img
+          class="${classes}"
           src="${lowsrc.url}"
           alt="${alt}"
           ${lazy && `loading="lazy"`}
