@@ -35,12 +35,16 @@ sidePadding: px-1
         <p
             class="font-display p-0 text-center uppercase">Raleigh | Durham | Cary
         </p>
-        <a class="w-4 animate-spring pt-5 block mx-auto" href="#about">
-            <img src="images/down.svg" />
+        <a
+            class="w-4 animate-spring pt-5 block mx-auto"
+            href="#about">
+            <img
+                src="images/down.svg" />
         </a>
     </div>
-    <img src="images/straw.jpg" class="absolute top-0 w-full background hidden" />
-
+    <img
+        class="absolute top-0 w-full background hidden"
+        src="images/straw.jpg" />
 </section>
 <section
     class="min-h-screen bg-light {{sidePadding}} pt-7"
@@ -83,6 +87,17 @@ sidePadding: px-1
                 throughout the world. He has nearly 10 years of horticulture and mushroom growing experience and
                 currently works as an arborist for Bartlett Tree Experts.
             </p>
+            <p>
+                <a
+                    class="inline-flex items-center p-1 shadow font-display text-l bg-accent-1 transition-shadow hover:shadow-sm rounded-sm"
+                    href="https://www.linkedin.com/in/charles-wagner-32259a18b/"
+                    target="_blank">Learn more.
+                    <span
+                        class="pl-1 w-4">
+                        {% render 'icons', type: 'external-link' %}
+                    </span>
+                </a>
+            </p>
         </div>
         <div
             class="flex-1 py-4 lg:pr-5 lg:order-1">
@@ -113,7 +128,7 @@ sidePadding: px-1
             </ol>
         </div>
         <div
-            class="flex-1 py-4 lg:pr-5 lg:order-1">
+            class="flex-1 py-4 lg:pl-5">
             {% picture'images/placeholder.jpg' 'alt text' 'shadow rounded-sm' %}
         </div>
     </div>
@@ -122,10 +137,12 @@ sidePadding: px-1
         <div
             class="flex-1 lg:px-4">
             {% render 'h3', text: "Plans and prices"%}
-            <div class="grid grid-cols-1 grid-rows-none md:grid-cols-2 md:grid-rows-2 gap-3">
-            {% for service in prices %}
-                {% render 'price-card', title: service.title, price: service.price, description: service.description %}
-            {% endfor %}
+            <div
+                class="grid grid-cols-1 grid-rows-none md:grid-cols-2
+                    md:grid-rows-2 gap-3">
+                {% for service in prices %}
+                    {% render 'price-card', title: service.title, price: service.price, description: service.description %}
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -138,5 +155,18 @@ sidePadding: px-1
             items-center">
         {% render 'h2', text: "Get in touch.", classes: "text-center" %}
         {% render 'contact-form'%}
+    </div>
+    <div>
+        <a
+            aria-label="Instagram"
+            class="flex items-center justify-center mx-auto mt-4 text-xl md:text-2xl p-2 w-full max-w-screen-sm font-display shadow transition-shadow hover:shadow-sm rounded-sm"
+            href="https://www.instagram.com/barbaric_botany/"
+            target="_blank">
+            Visit Myrkwood on Instagram
+            <span
+                class="pl-2">
+                {% render 'icons', type: "instagram" %}
+            </span>
+        </a>
     </div>
 </section>
