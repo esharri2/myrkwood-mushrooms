@@ -42,9 +42,11 @@ sidePadding: px-1
                 src="images/down.svg" />
         </a>
     </div>
+    {% comment %}
     <img
         class="absolute top-0 w-full background hidden"
-        src="images/straw.jpg" />
+        src="images/mushrooms.jpg" />
+    {% endcomment %}
 </section>
 <section
     class="min-h-screen bg-light {{sidePadding}} pt-7"
@@ -72,11 +74,11 @@ sidePadding: px-1
         </div>
         <div
             class="flex-1 py-4 lg:pl-5">
-            {% picture 'images/placeholder.jpg' 'alt text' 'shadow rounded-sm'%}
+            {% picture 'images/mushrooms.jpg' 'alt text' 'shadow rounded-sm'%}
         </div>
     </div>
     <div
-        class="container flex flex-col lg:flex-row lg:items-center">
+        class="container flex flex-col lg:flex-row ">
         <div
             class="flex-1 lg:order-2">
             {% render 'h3', text: "Meet the mushroom guru." %}
@@ -101,7 +103,7 @@ sidePadding: px-1
         </div>
         <div
             class="flex-1 py-4 lg:pr-5 lg:order-1">
-            {% picture'images/placeholder.jpg' 'alt text' 'shadow rounded-sm' %}
+            {% picture'images/charlie.jpg' 'alt text' 'shadow rounded-sm' %}
         </div>
     </div>
 </section>
@@ -109,7 +111,7 @@ sidePadding: px-1
     class="min-h-screen {{sidePadding}} pt-6 pb-6"
     id="how-it-works">
     <div
-        class="container flex flex-col lg:flex-row lg:items-center">
+        class="container flex flex-col lg:flex-row ">
         <div
             class="flex-1 lg:px-4">
             {% render 'h2', text: "How it works"%}
@@ -128,8 +130,18 @@ sidePadding: px-1
             </ol>
         </div>
         <div
-            class="flex-1 py-4 lg:pl-5">
-            {% picture'images/placeholder.jpg' 'alt text' 'shadow rounded-sm' %}
+            class="flex-1 py-4 lg:pl-5 flex flex-col">
+            <div
+                class="p-2"
+                style="max-width:375px">
+                {% picture'images/beds.jpg' 'alt text' 'shadow rounded-sm' '350px' %}
+            </div>
+            <div
+                class="p-2 justify-self-end self-end"
+                style="max-width: 450px"
+                >
+                {% picture'images/logs.jpg' 'alt text' 'shadow rounded-sm' '450px'%}
+            </div>
         </div>
     </div>
     <div
@@ -156,7 +168,8 @@ sidePadding: px-1
         {% render 'h2', text: "Get in touch.", classes: "text-center" %}
         {% render 'contact-form'%}
     </div>
-    <div class="container max-w-screen-md">
+    <div
+        class="container max-w-screen-md">
         <a
             aria-label="Instagram"
             class="flex items-center justify-center mx-auto mt-4 text-xl md:text-2xl p-2 w-full font-display shadow transition-shadow hover:shadow-sm rounded-sm"
