@@ -82,11 +82,16 @@ module.exports = {
           "100%": { transform: "translateY(0)" },
         },
         spring: {
-          "0%": {        transform: "translateY(4%)"        },
-          "50%": {        transform: "translateY(-4%)"        },
-          "100%": {        transform: "translateY(4%)"        },
+          "0%": { transform: "translateY(4%)" },
+          "50%": { transform: "translateY(-4%)" },
+          "100%": { transform: "translateY(4%)" },
         },
       },
+    },
+  },
+  variants: {
+    extend: {
+      padding: ["first", "last"],
     },
   },
 };
