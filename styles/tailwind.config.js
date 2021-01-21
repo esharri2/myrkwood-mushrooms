@@ -64,7 +64,9 @@ module.exports = {
       7: "8rem",
       8: "10rem",
       "half-window": "50vh",
-      "header-height": "",
+      "custom-228": "228px",
+      "custom-360": "360px",
+      "custom-564": "564px",
     },
     extend: {
       animation: {
