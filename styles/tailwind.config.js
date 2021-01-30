@@ -47,6 +47,9 @@ module.exports = {
       display: ["Fraunces", "serif"],
       body: ["Lato", "Helvetica", "sans-serif"],
     },
+    maxWidth: {
+      xxs: "8rem",
+    },
     screens: {
       sm: "480px",
       md: "768px",
