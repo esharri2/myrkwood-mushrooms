@@ -1,5 +1,6 @@
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("./images/*");
+  eleventyConfig.addPassthroughCopy("./documents/*");
   eleventyConfig.addPassthroughCopy({ "./_temp/main.css": "./main.css" });
   eleventyConfig.addPassthroughCopy({ "./_temp/main.js": "./main.js" });
   // todo pt only in dev
