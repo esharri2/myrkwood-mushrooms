@@ -26,12 +26,14 @@ sidePadding: px-1
         <h1
             class="sr-only">{{site.title}}
         </h1>
-        <img
-            alt="Myrkwood Mushrooms logo showing mushrooms and oak tree"
-            class="animate-fade-in w-full max-w-screen-sm mx-auto xl:max-w-screen-md min-h-custom-228 md:min-h-custom-360 xl:min-h-custom-564"
-            height="150"
-            src="images/logo_CW.svg"
-            width="200" />
+        <div>
+            <img
+                alt="Myrkwood Mushrooms logo showing mushrooms and oak tree"
+                class="animate-fade-in w-full max-w-screen-sm mx-auto xl:max-w-screen-md min-h-custom-228 md:min-h-custom-360 xl:min-h-custom-564"
+                height="150"
+                src="images/logo_CW.svg"
+                width="200" />
+        </div>
         <p
             class="font-display py-4 text-2xl text-center sm:text-2xl">Backyard mushroom gardens in the Triangle, NC
         </p>
@@ -100,12 +102,11 @@ sidePadding: px-1
                     href="https://www.linkedin.com/in/charles-wagner-32259a18b/"
                     rel="noreferrer"
                     target="_blank">
-                                     <span
-                        class="pr-1 w-3">
+                    <span
+                        class="mr-2 w-3">
                         {% render 'icons', type: 'external-link' %}
                     </span>
                     Connect on LinkedIn
-   
                 </a>
             </p>
         </div>
@@ -142,8 +143,8 @@ sidePadding: px-1
                 rel="noreferrer"
                 target="_blank">
                 <span
-                    class="pr-1 w-3">
-                    {% render 'icons', type: 'external-link' %}
+                    class="mr-2 w-4">
+                    {% render 'icons', type: 'download' %}
                 </span>
                 Download instructions for caring for your mushrooms
             </a>

@@ -44,4 +44,8 @@ img.background {
     filter:brightness(.5);
 }
 
+svg {
+    width: 100%;
+}
+
 
