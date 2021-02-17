@@ -1,21 +1,14 @@
 <head>
-    <meta
-        charset="utf-8">
-    <meta
-        content="width=device-width, initial-scale=1"
-        name="viewport">
-    <title>{{ site.title }}
-    </title>
-    <meta
-        name="description"
-        content="{{ site.description }}" />
-    <meta
-        charset="utf-8" />
-    <meta
-        content="width=device-width, initial-scale=1.0"
-        name="viewport" />
-    <meta name="theme-color" content="#93c47d" />
-
+    {% render 'meta',
+        page_title: title,
+        site_title: site.title,
+        page_description: description,
+        site_description: site.description,
+        author: site.author,
+        domain: site.domain,
+        meta_image: site.meta_image,
+        meta_image_alt: site.meta_image_alt
+    %}
     <link
         as="font"
         crossorigin

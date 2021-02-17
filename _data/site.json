@@ -1,9 +1,10 @@
 {
   "title": "Myrkwood Mushrooms",
-  "description": "We create custom edible mushroom gardens, right in your own yard. Serving central North Carolina.",
+  "description": "Myrkwood Mushrooms builds custom, edible mushroom gardens, right in your own yard. Serving central North Carolina.",
   "domain": "https://www.myrkwoodmushrooms.com",
-  "meta_img": "mushrooms.jpg",
-  "meta_img_alt": "Mushrooms growing in a straw bed",
+  "meta_image": "mushrooms.jpg",
+  "meta_image_alt": "Mushrooms growing in a straw bed",
+  "theme_color": "#93c47d",
   "builtBy": {
     "name": "EH",
     "url": "https://www.evan-harrison.com"
