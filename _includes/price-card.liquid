@@ -8,7 +8,9 @@
         </h4>
         <div style="max-width: 120px"
             class="font-display pl-2">
-            <div class="text-xs">Starting from</div>
+            {% unless price == empty %}
+                <div class="text-xs">Starting from</div>
+            {% endunless %}
             <div>{{price}}</div>
         </div>
     </div>
