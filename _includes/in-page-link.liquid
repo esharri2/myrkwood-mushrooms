@@ -1,0 +1,11 @@
+<a
+    class="inline-flex items-center py-1 px-1 lg:px-2 mt-2 w-full lg:w-auto mr-3 shadow font-display text-l bg-accent-1 transition-shadow hover:shadow-sm rounded-sm"
+    href="{{url}}" {% if external == true %} rel="noreferrer"
+    target="_blank"
+    {% endif %}>
+    <span
+        class="mr-2 w-3 flex-shrink-0">
+        {% render 'icons', type: icon %}
+    </span>
+    {{title}}
+</a>

@@ -1,29 +1,37 @@
 ---
+resource_links: 
+  - title : "Visit Myrkwood on Instagram"
+    icon: "instagram"
+    link: "https://www.instagram.com/myrkwood_mushrooms/"
+    external: true
+  - title : "Download our informational flier"
+    icon: "download"
+    link: "/documents/myrkwood_mushrooms_info_sheet.png"
 prices:
   - title: "Old Faithful"
     price: "$200"
     description:
-      '3 ✕ 6 ft. mushroom bed constructed from high quality, naturally rot-resistant cedar planks. Used for the cultivation of oyster mushrooms, wine caps, or wood blewits. Fruits in a little as 6 weeks.'
+      '3 ✕ 6 ft. mushroom bed constructed from high quality, naturally rot-resistant cedar planks. Used for the cultivation of oyster mushrooms, wine caps, or wood blewits. Fruits in as little as 6 weeks.'
   - title: "Myrkwood Logs"
     price: "$50/log"
     description:
-      "3 - 4 ft. hand cut and selected local hardwood (oak or maple) logs pre-drilled and inoculated with lion’s mane or shitake spawn. Fruits for 2-4 years."
+      "3 - 4 ft. hand cut and selected local hardwood logs pre-drilled and inoculated with oyster or shiitake spawn. Fruits for 2-4 years."
   - title: "Indoor fruiting block"
     price: "$50 each"
     description:
-      "5 lb. 'spray and grow' block ready to fruit for oyster, lion's mane, or reishi mushrooms."
+      "5 lb. 'spray and grow' block ready to fruit for oyster, lion's mane, shiitake, or reishi mushrooms."
   - title: "Oyster mushroom pots"
     price: "$20 each"
     description:
       "Perfect for small patios and apartments, your choice of oyster mushrooms ready to fruit in containers."
-  - title: "Custom permaculture"
+  - title: "Custom projects"
     price: ""
     description:
-      "Specialty mushroom species, fruit trees, small to medium scale tree and shrub work, vegetables, herbs, and medicinal plants design and installation."
-  - title: "Cultivation and <nobr>post-harvest</nobr> mentorship"
+      "Specialty mushroom species, trees, garden plants, medicinal plants design and installation."
+  - title: "Mycology research and education"
     price: ""
     description:
-      "Instruction, advice, and demonstration of proper mushroom cultivation techniques (sterile technique, agar work, strain isolation, culture transfers), preservation (drying, pickling, canning), and medicine making (tinctures, salves, other extractions)."
+      "Scientific consulting, laboratory work, and product development. If you have an idea that relates to plants and fungi please <a class='underline' href='#contact'>contact us</a> to design and execute a project or educational event."
 sidePadding: px-1
 ---
 <section
@@ -97,34 +105,15 @@ sidePadding: px-1
         <div
             class="flex-1 lg:order-2">
             {% render 'h3', text: "Meet the mushroom guru." %}
-            <p>
+            <p
+                class="lg:mb-4">
                 Charlie, owner and operator of Myrkwood Mushrooms, holds a doctorate in Plant & Microbial Biology from
                 NC State University (2020). An ethnobotanist
                 by training, Charlie is an expert in the traditional usage of medicinal plants and fungi by cultures
                 throughout the world. He has nearly 10 years of horticulture and mushroom growing experience.
             </p>
-            <a
-                class="inline-flex items-center py-1 px-2 mt-2 mr-3 shadow font-display text-l bg-accent-1 transition-shadow hover:shadow-sm rounded-sm"
-                href="https://www.linkedin.com/in/charles-wagner-32259a18b/"
-                rel="noreferrer"
-                target="_blank">
-                <span
-                    class="mr-2 w-3">
-                    {% render 'icons', type: 'external-link' %}
-                </span>
-                Connect on LinkedIn
-            </a>
-            <a
-                class="inline-flex items-center py-1 px-2 mt-3 shadow font-display text-l bg-accent-1 transition-shadow hover:shadow-sm rounded-sm"
-                href="https://www.researchgate.net/profile/Charles-Wagner"
-                rel="noreferrer"
-                target="_blank">
-                <span
-                    class="mr-2 w-3">
-                    {% render 'icons', type: 'external-link' %}
-                </span>
-                Learn about Charlie's research
-            </a>
+            {% render 'in-page-link', url: 'https://www.linkedin.com/in/charles-wagner-32259a18b/' , title: "Connect on LinkedIn", icon: 'external-link', external: true %}
+            {% render 'in-page-link', url: "https://www.researchgate.net/profile/Charles-Wagner" , title: "Learn about Charlie's research", icon: 'external-link', external: true %}
         </div>
         <div
             class="flex-1 py-4 lg:pr-5 lg:order-1">
@@ -153,17 +142,7 @@ sidePadding: px-1
                 <li>When it comes time to harvest, receive mentorship for proper use of your mushrooms.
                 </li>
             </ol>
-            <a
-                class="mt-2 inline-flex items-center py-1 px-2 shadow font-display text-l bg-accent-1 transition-shadow hover:shadow-sm rounded-sm"
-                href="/documents/myrkwood_mushrooms_care_sheet.pdf"
-                rel="noreferrer"
-                target="_blank">
-                <span
-                    class="mr-2 w-4">
-                    {% render 'icons', type: 'download' %}
-                </span>
-                Download instructions for caring for your mushrooms
-            </a>
+            {% render 'in-page-link', title: 'Download instructions for caring for your mushrooms', url: '/documents/myrkwood_mushrooms_care_sheet.pdf', icon: 'download', external: false %}
         </div>
         <div
             class="flex-1 py-4 lg:pl-5 flex flex-col">
@@ -185,37 +164,36 @@ sidePadding: px-1
             class="flex-1 lg:px-4">
             {% render 'h3', text: "Plans and prices"%}
             <div
-                class="grid grid-cols-1 grid-rows-none md:grid-cols-2
-                    md:grid-rows-2 gap-3">
+                class="grid grid-cols-1 grid-rows-none md:grid-cols-2 gap-3">
                 {% for service in prices %}
                     {% render 'price-card', title: service.title, price: service.price, description: service.description %}
                 {% endfor %}
             </div>
         </div>
     </div>
+    {% comment %}
+    <div
+        class="container flex flex-col lg:flex-row lg:items-center">
+        <div
+            class="flex-1 lg:px-4">
+            {% render 'h3', text: "Mycology Research and Education"%}
+            <p>
+                Scientific consulting, laboratory work, and product development. If you have an idea that relates to plants and fungi please contact us to design and execute a project or educational event.
+            </p>
+        </div>
+    </div>
+    {% endcomment %}
 </section>
 <section
     class="min-h-screen  {{sidePadding}} pt-4 pb-6 lg:py-6"
     id="contact">
     <div
-        class="container max-w-screen-md flex flex-col justify-center
-            items-center">
+        class="container max-w-screen-md mb-6 flex flex-col
+            justify-center items-center">
         {% render 'h2', text: "Get in touch.", classes: "text-center" %}
         {% render 'contact-form'%}
     </div>
-    <div
-        class="container max-w-screen-md">
-        <a
-            aria-label="Instagram"
-            class="flex items-center justify-center mx-auto mt-4 text-xl md:text-2xl p-2 w-full font-display shadow transition-shadow hover:shadow-sm rounded-sm"
-            href="https://www.instagram.com/myrkwood_mushrooms/"
-            rel="noreferrer"
-            target="_blank">
-            Visit Myrkwood on Instagram
-            <span
-                class="pl-2">
-                {% render 'icons', type: "instagram" %}
-            </span>
-        </a>
-    </div>
+    {% for resource in resource_links %}
+        {% render 'resource-link', url: resource.url, title: resource.title, icon: resource.icon, external: resource.external %}
+    {% endfor %}
 </section>

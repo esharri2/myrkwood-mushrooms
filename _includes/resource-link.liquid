@@ -1,0 +1,17 @@
+    <div
+        class="container max-w-screen-md">
+        <a
+            class="bg-accent-1 flex items-center justify-center mx-auto mt-4 text-xl md:text-2xl p-1 lg:p-2 w-full font-display shadow transition-shadow hover:shadow-sm rounded-sm"
+            href="{{url}}"
+            {% if external == true %}
+            rel="noreferrer"
+            target="_blank"
+            {% endif %}
+            >
+            <span
+                class="block mr-2 flex-shrink-0">
+                {% render 'icons', type: icon %}
+            </span>
+            {{title}}
+        </a>
+    </div>

@@ -64,6 +64,7 @@ module.exports = {
       7: "8rem",
       8: "10rem",
       "half-window": "50vh",
+      "custom-150": "150px",
       "custom-228": "228px",
       "custom-360": "360px",
       "custom-564": "564px",

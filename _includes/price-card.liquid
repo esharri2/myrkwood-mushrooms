@@ -1,5 +1,5 @@
 <section
-    class="p-2 rounded-sm max-w-screen-md shadow border-solid
+    class="p-2 rounded-sm max-w-screen-md min-h-custom-150 shadow border-solid
         border-accent-2">
     <div
         class="flex justify-between pb-2">
@@ -9,7 +9,9 @@
         <div style="max-width: 120px"
             class="font-display pl-2">
             {% unless price == empty %}
+                {% comment %}
                 <div class="text-xs">Starting from</div>
+                {% endcomment %}
             {% endunless %}
             <div>{{price}}</div>
         </div>
