@@ -45,143 +45,143 @@ prices:
 sidePadding: px-1
 ---
 <section
-    class="min-h-screen bg-accent-1 pt-5 pb-6 px-0 relative"
-    id="splash">
-    <div
-        class="max-w-screen-md w-full mx-auto relative z-10 px-1">
-        <h1
-            class="sr-only">{{site.title}}
-        </h1>
-        <div>
-            <img
-                alt="Myrkwood Mushrooms logo showing mushrooms and oak tree"
-                class="animate-fade-in w-full max-w-screen-sm mx-auto xl:max-w-screen-md min-h-custom-228 md:min-h-custom-360 xl:min-h-custom-564"
-                height="150"
-                src="images/logo_CW.svg"
-                width="200" />
-        </div>
-        <p
-            class="font-display py-4 text-2xl text-center sm:text-2xl">Backyard mushroom gardens in the Triangle, NC
-        </p>
-        <p
-            class="font-display p-0 text-center uppercase">Raleigh | Durham | Cary
-        </p>
-        <a
-            alt=""
-            aria-hidden="true"
-            class="w-4 animate-spring pt-5 block mx-auto"
-            href="#about">
-            <img
-                src="images/down.svg" />
-        </a>
+  class="min-h-screen bg-accent-1 pt-5 pb-6 px-0 relative"
+  id="splash">
+  <div
+    class="max-w-screen-md w-full mx-auto relative z-10 px-1">
+    <h1
+      class="sr-only">{{site.title}}
+    </h1>
+    <div>
+      <img
+        alt="Myrkwood Mushrooms logo showing mushrooms and oak tree"
+        class="animate-fade-in w-full max-w-screen-sm mx-auto xl:max-w-screen-md min-h-custom-228 md:min-h-custom-360 xl:min-h-custom-564"
+        height="150"
+        src="images/logo_CW.svg"
+        width="200" />
     </div>
-    {% comment %}
+    <p
+      class="font-display py-4 text-2xl text-center sm:text-2xl">Backyard mushroom gardens in the Triangle, NC
+    </p>
+    <p
+      class="font-display p-0 text-center uppercase">Raleigh | Durham | Cary
+    </p>
+    <a
+      alt=""
+      aria-hidden="true"
+      class="w-4 animate-spring pt-5 block mx-auto"
+      href="#about">
+      <img
+        src="images/down.svg" />
+    </a>
+  </div>
+  {% comment %}
     <img
         class="absolute top-0 w-full background hidden"
         src="images/mushrooms.jpg" />
     {% endcomment %}
 </section>
 <section
-    class="min-h-screen bg-light {{sidePadding}} pt-7"
-    id="about">
+  class="min-h-screen bg-light {{sidePadding}} pt-7"
+  id="about">
+  <div
+    class="container flex flex-col lg:flex-row lg:items-center">
     <div
-        class="container flex flex-col lg:flex-row lg:items-center">
-        <div
-            class="flex-1 pb-2">
-            {% render 'h2', text:"Welcome to Myrkwood."%}
-            <p>
-                Myrkwood (Old Norse, "dark wood" or "black forest”) is the wild, primitive forest of ancient Europe. In
+      class="flex-1 pb-2">
+      {% render 'h2', text:"Welcome to Myrkwood."%}
+      <p>
+        Myrkwood (Old Norse, "dark wood" or "black forest”) is the wild, primitive forest of ancient Europe. In
                 the Norse tradition, "crossing the Black Forest" came to signify penetrating the barriers between one
                 world and another. In this sense, Myrkwood
                 Mushrooms aims to connect you with the joy and benefits of the natural world, right in your
                 own backyard.
-            </p>
-            <p>Fungi are essential for soil health, the growth of plants, and for the decomposition of
+      </p>
+      <p>Fungi are essential for soil health, the growth of plants, and for the decomposition of
                 wood and other organic matter. Not only are fungi ecological workhorses, but their fruits, mushrooms,
                 are fun and easy to grow, providing delicious food and beneficial medicines.
-            </p>
-            <p>We can help you install and cultivate your very own sustainable mushroom garden. From simple mushroom
+      </p>
+      <p>We can help you install and cultivate your very own sustainable mushroom garden. From simple mushroom
                 logs and beds to large scale permaculture projects, our 10+ years of experience will yield you results
                 time and time again.
-            </p>
-        </div>
-        <div
-            class="flex-1 py-4 lg:pl-5">
-            {% picture 'images/mushrooms.jpg' 'alt text' 'shadow rounded-sm'%}
-        </div>
+      </p>
     </div>
     <div
-        class="container flex flex-col lg:flex-row lg:items-center">
-        <div
-            class="flex-1 lg:order-2">
-            {% render 'h3', text: "Meet the mushroom guru." %}
-            <p
-                class="lg:mb-4">
-                Charlie, owner and operator of Myrkwood Mushrooms, holds a doctorate in Plant & Microbial Biology from
+      class="flex-1 py-4 lg:pl-5">
+      {% picture 'images/mushrooms.jpg' 'alt text' 'shadow rounded-sm'%}
+    </div>
+  </div>
+  <div
+    class="container flex flex-col lg:flex-row lg:items-center">
+    <div
+      class="flex-1 lg:order-2">
+      {% render 'h3', text: "Meet the mushroom guru." %}
+      <p
+        class="lg:mb-4">
+        Charlie, owner and operator of Myrkwood Mushrooms, holds a doctorate in Plant & Microbial Biology from
                 NC State University (2020). An ethnobotanist
                 by training, Charlie is an expert in the traditional usage of medicinal plants and fungi by cultures
                 throughout the world. He has nearly 10 years of horticulture and mushroom growing experience.
-            </p>
-            {% render 'in-page-link', url: 'https://www.linkedin.com/in/charles-wagner-32259a18b/' , title: "Connect on LinkedIn", icon: 'external-link', external: true %}
-            {% render 'in-page-link', url: "https://www.researchgate.net/profile/Charles-Wagner" , title: "Learn about Charlie's research", icon: 'external-link', external: true %}
-        </div>
-        <div
-            class="flex-1 py-4 lg:pr-5 lg:order-1">
-            {% picture'images/charlie.jpg' 'alt text' 'shadow rounded-sm' %}
-        </div>
+      </p>
+      {% render 'in-page-link', url: 'https://www.linkedin.com/in/charles-wagner-32259a18b/' , title: "Connect on LinkedIn", icon: 'external-link', external: true %}
+      {% render 'in-page-link', url: "https://www.researchgate.net/profile/Charles-Wagner" , title: "Learn about Charlie's research", icon: 'external-link', external: true %}
     </div>
+    <div
+      class="flex-1 py-4 lg:pr-5 lg:order-1">
+      {% picture'images/charlie.jpg' 'Charlie smiling and holding a mushroom in front of some trees' 'shadow rounded-sm' %}
+    </div>
+  </div>
 </section>
 <section
-    class="min-h-screen {{sidePadding}} pt-4 lg:pt-6 pb-6"
-    id="how-it-works">
+  class="min-h-screen {{sidePadding}} pt-4 lg:pt-6 pb-6"
+  id="how-it-works">
+  <div
+    class="container flex flex-col lg:flex-row lg:items-center">
     <div
-        class="container flex flex-col lg:flex-row lg:items-center">
-        <div
-            class="flex-1 lg:px-4">
-            {% render 'h2', text: "How it works"%}
-            <ol
-                class="list-decimal pl-2 text-l">
-                <li>Schedule a visit or virtual consultation to assess the property, determine what you want to grow, and develop
+      class="flex-1 lg:px-4">
+      {% render 'h2', text: "How it works"%}
+      <ol
+        class="list-decimal pl-2 text-l">
+        <li>Schedule a visit or virtual consultation to assess the property, determine what you want to grow, and develop
                     a plan for the garden.
-                </li>
-                <li>Choose an installation date to build and inoculate the garden.
-                </li>
-                <li>Opt for periodic maintenance. We keep an open door for you to join in for a hands-on experience
+        </li>
+        <li>Choose an installation date to build and inoculate the garden.
+        </li>
+        <li>Opt for periodic maintenance. We keep an open door for you to join in for a hands-on experience
                     anytime you like.
-                </li>
-                <li>When it comes time to harvest, receive mentorship for proper use of your mushrooms.
-                </li>
-            </ol>
-            {% render 'in-page-link', title: 'Download instructions for caring for your mushrooms', url: '/documents/myrkwood_mushrooms_care_sheet.pdf', icon: 'download', external: false %}
-        </div>
-        <div
-            class="flex-1 py-4 lg:pl-5 flex flex-col">
-            <div
-                class="p-2"
-                style="max-width:375px">
-                {% picture'images/beds.jpg' 'alt text' 'shadow rounded-sm' '350px' %}
-            </div>
-            <div
-                class="p-2 justify-self-end self-end"
-                style="max-width: 450px">
-                {% picture'images/logs.jpg' 'alt text' 'shadow rounded-sm' '450px'%}
-            </div>
-        </div>
+        </li>
+        <li>When it comes time to harvest, receive mentorship for proper use of your mushrooms.
+        </li>
+      </ol>
+      {% render 'in-page-link', title: 'Download instructions for caring for your mushrooms', url: '/documents/myrkwood_mushrooms_care_sheet.pdf', icon: 'download', external: false %}
     </div>
     <div
-        class="container flex flex-col lg:flex-row lg:items-center">
-        <div
-            class="flex-1 lg:px-4">
-            {% render 'h3', text: "Plans and prices"%}
-            <div
-                class="grid grid-cols-1 grid-rows-none md:grid-cols-2 gap-3">
-                {% for service in prices %}
-                    {% render 'price-card', title: service.title, price: service.price, description: service.description %}
-                {% endfor %}
-            </div>
-        </div>
+      class="flex-1 py-4 lg:pl-5 flex flex-col">
+      <div
+        class="p-2"
+        style="max-width:375px">
+        {% picture'images/beds.jpg' 'alt text' 'shadow rounded-sm' '350px' %}
+      </div>
+      <div
+        class="p-2 justify-self-end self-end"
+        style="max-width: 450px">
+        {% picture'images/logs.jpg' 'alt text' 'shadow rounded-sm' '450px'%}
+      </div>
     </div>
-    {% comment %}
+  </div>
+  <div
+    class="container flex flex-col lg:flex-row lg:items-center">
+    <div
+      class="flex-1 lg:px-4">
+      {% render 'h3', text: "Plans and prices"%}
+      <div
+        class="grid grid-cols-1 grid-rows-none md:grid-cols-2 gap-3">
+        {% for service in prices %}
+          {% render 'price-card', title: service.title, price: service.price, description: service.description %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% comment %}
     <div
         class="container flex flex-col lg:flex-row lg:items-center">
         <div
@@ -195,15 +195,31 @@ sidePadding: px-1
     {% endcomment %}
 </section>
 <section
-    class="min-h-screen  {{sidePadding}} pt-4 pb-6 lg:py-6"
-    id="contact">
-    <div
-        class="container max-w-screen-md mb-6 flex flex-col
-            justify-center items-center">
-        {% render 'h2', text: "Get in touch.", classes: "text-center" %}
-        {% render 'contact-form'%}
-    </div>
-    {% for resource in resource_links %}
-        {% render 'resource-link', url: resource.url, title: resource.title, icon: resource.icon, external: resource.external %}
-    {% endfor %}
+  class="min-h-screen  {{sidePadding}} pt-4 pb-6 lg:py-6"
+  id="contact">
+  <div
+    class="container max-w-screen-md mb-6 flex flex-col
+      justify-center items-center">
+    {% render 'h2', text: "Get in touch.", classes: "text-center" %}
+    {% render 'contact-form'%}
+  </div>
+  {% for resource in resource_links %}
+    {% render 'resource-link', url: resource.url, title: resource.title, icon: resource.icon, external: resource.external %}
+  {% endfor %}
+</section>
+<section class="{{sidePadding}} pb-4">
+  {% render 'h2', text: "Our partners", classes: "text-center" %}
+  <div class="flex flex-col lg:flex-row justify-center items-center">
+  {% for partner in partners %}
+    <a class="px-4 h-custom-228 flex items-center" aria-label={{partner.name}} href={{partner.url}}>
+      <img
+        class="transition-all transform hover:scale-125"
+        target="_blank"
+        rel="noreferrer"
+        alt="Logo for {{partner.name}}"
+        src="images/{{partner.image}}"
+        width="200" />
+    </a>
+  {% endfor%}
+  </div>  
 </section>
