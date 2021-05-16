@@ -199,8 +199,15 @@ sidePadding: px-1
   <div
     class="container max-w-screen-md mb-6 flex flex-col
       justify-center items-center">
-    {% render 'h2', text: "Get in touch.", classes: "text-center" %}
+    {% render 'h2', text: "Get in touch", classes: "text-center" %}
     {% render 'contact-form'%}
+  </div>
+  <div
+    class="container max-w-screen-md mb-6 flex flex-col
+      justify-center items-center">
+    {% render 'h3', text: "Join our email list", classes: "text-center" %}
+    <p>Sign up to find out when we have mushrooms for sale and other Myrkwood news. </p>
+    {% render 'email-form'%}
   </div>
   {% for resource in resource_links %}
     {% render 'resource-link', url: resource.url, title: resource.title, icon: resource.icon, external: resource.external %}
