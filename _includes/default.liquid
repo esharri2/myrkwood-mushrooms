@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="font-body text-dark bg-light overscroll-contain">
-    {% render 'head', site: site %}
+    {% include 'head', site: site %}
     <body
         class="relative">
-        {% render 'skip-to-content' %}
-        {% render 'ie-notice' %}
+        {% include 'skip-to-content' %}
+        {% include 'ie-notice' %}
         <header class="bg-accent-1 fixed top-0 right-0 left-0 z-20">
             <div
                 class="flex justify-center items-center flex-wrap">
-                {% render 'navigation', navigation: navigation, page: page %}
+                {% include 'navigation', navigation: navigation, page: page %}
             </div>
             <div class="fixed right-2 top-2 hidden md:flex items-center">
-               <!-- <a aria-label="Etsy" title="Etsy" target="_blank" rel="noreferrer" href="https://www.etsy.com/shop/MyrkwoodMushrooms/">{% render 'icons', type: "etsy-short" %}</a> -->
+               <!-- <a aria-label="Etsy" title="Etsy" target="_blank" rel="noreferrer" href="https://www.etsy.com/shop/MyrkwoodMushrooms/">{% include 'icons', type: "etsy-short" %}</a> -->
                <!-- <span class="block pl-1 mr-1 border-l border-dark"></span> -->
-               <a aria-label="Myrkwood Mushrooms Instagram" title="Instagram" target="_blank" rel="noreferrer" href="https://www.instagram.com/myrkwood_mushrooms/">{% render 'icons', type: "instagram" %}</a>
+               <a aria-label="Myrkwood Mushrooms Instagram" title="Instagram" target="_blank" rel="noreferrer" href="https://www.instagram.com/myrkwood_mushrooms/">{% include 'icons', type: "instagram" %}</a>
             </div>
         </header>
         <main
@@ -21,6 +21,6 @@
             id="main">
             {{ content }}
         </main>
-        {% render 'footer', title: site.title, builtBy: site.builtBy, navigation: navigation_footer %}
+        {% include 'footer', title: site.title, builtBy: site.builtBy, navigation: navigation_footer %}
     </body>
 </html>

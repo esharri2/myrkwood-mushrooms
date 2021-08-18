@@ -96,7 +96,7 @@ sidePadding: px-1
     class="container flex flex-col lg:flex-row lg:items-center">
     <div
       class="flex-1 pb-2">
-      {% render 'h2', text:"Welcome to Myrkwood."%}
+      {% include 'h2', text:"Welcome to Myrkwood."%}
       <p>
         Myrkwood (Old Norse, "dark wood" or "black forest”) is the wild, primitive forest of ancient Europe. In
                 the Norse tradition, "crossing the Black Forest" came to signify penetrating the barriers between one
@@ -122,7 +122,7 @@ sidePadding: px-1
     class="container flex flex-col lg:flex-row lg:items-center">
     <div
       class="flex-1 lg:order-2">
-      {% render 'h3', text: "Meet the mushroom guru." %}
+      {% include 'h3', text: "Meet the mushroom guru." %}
       <p
         class="lg:mb-4">
         Charlie, owner and operator of Myrkwood Mushrooms, holds a doctorate in Plant & Microbial Biology from
@@ -130,8 +130,8 @@ sidePadding: px-1
                 by training, Charlie is an expert in the traditional usage of medicinal plants and fungi by cultures
                 throughout the world. He has nearly 10 years of horticulture and mushroom growing experience.
       </p>
-      {% render 'in-page-link', url: 'https://www.linkedin.com/in/charles-wagner-32259a18b/' , title: "Connect on LinkedIn", icon: 'external-link', external: true %}
-      {% render 'in-page-link', url: "https://www.researchgate.net/profile/Charles-Wagner" , title: "Learn about Charlie's research", icon: 'external-link', external: true %}
+      {% include 'in-page-link', url: 'https://www.linkedin.com/in/charles-wagner-32259a18b/' , title: "Connect on LinkedIn", icon: 'external-link', external: true %}
+      {% include 'in-page-link', url: "https://www.researchgate.net/profile/Charles-Wagner" , title: "Learn about Charlie's research", icon: 'external-link', external: true %}
     </div>
     <div
       class="flex-1 py-4 lg:pr-5 lg:order-1">
@@ -146,7 +146,7 @@ sidePadding: px-1
     class="container flex flex-col lg:flex-row lg:items-center">
     <div
       class="flex-1 lg:px-4">
-      {% render 'h2', text: "How it works"%}
+      {% include 'h2', text: "How it works"%}
       <ol
         class="list-decimal pl-2 text-l">
         <li>Schedule a visit or virtual consultation to assess the property, determine what you want to grow, and develop
@@ -160,7 +160,7 @@ sidePadding: px-1
         <li>When it comes time to harvest, receive mentorship for proper use of your mushrooms.
         </li>
       </ol>
-      {% render 'in-page-link', title: 'Download instructions for caring for your mushrooms', url: '/documents/myrkwood_mushrooms_care_sheet.pdf', icon: 'download', external: false %}
+      {% include 'in-page-link', title: 'Download instructions for caring for your mushrooms', url: '/documents/myrkwood_mushrooms_care_sheet.pdf', icon: 'download', external: false %}
     </div>
     <div
       class="flex-1 py-4 lg:pl-5 flex flex-col">
@@ -180,11 +180,11 @@ sidePadding: px-1
     class="container flex flex-col lg:flex-row lg:items-center">
     <div
       class="flex-1 lg:px-4">
-      {% render 'h3', text: "Plans and prices"%}
+      {% include 'h3', text: "Plans and prices"%}
       <div
         class="grid grid-cols-1 grid-rows-none md:grid-cols-2 gap-3">
         {% for service in prices %}
-          {% render 'price-card', title: service.title, price: service.price, description: service.description %}
+          {% include 'price-card', title: service.title, price: service.price, description: service.description %}
         {% endfor %}
       </div>
     </div>
@@ -194,7 +194,7 @@ sidePadding: px-1
         class="container flex flex-col lg:flex-row lg:items-center">
         <div
             class="flex-1 lg:px-4">
-            {% render 'h3', text: "Mycology Research and Education"%}
+            {% include 'h3', text: "Mycology Research and Education"%}
             <p>
                 Scientific consulting, laboratory work, and product development. If you have an idea that relates to plants and fungi please contact us to design and execute a project or educational event.
             </p>
@@ -208,22 +208,22 @@ sidePadding: px-1
   <div
     class="container max-w-screen-md mb-6 flex flex-col
       justify-center items-center">
-    {% render 'h2', text: "Get in touch", classes: "text-center" %}
-    {% render 'contact-form'%}
+    {% include 'h2', text: "Get in touch", classes: "text-center" %}
+    {% include 'contact-form'%}
   </div>
   <div
     class="container max-w-screen-md mb-6 flex flex-col
       justify-center items-center">
-    {% render 'h3', text: "Join our email list", classes: "text-center" %}
+    {% include 'h3', text: "Join our email list", classes: "text-center" %}
     <p>Sign up to find out when we have mushrooms for sale and other Myrkwood news. </p>
-    {% render 'email-form'%}
+    {% include 'email-form'%}
   </div>
   {% for resource in resource_links %}
-    {% render 'resource-link', url: resource.url, title: resource.title, icon: resource.icon, external: resource.external %}
+    {% include 'resource-link', url: resource.url, title: resource.title, icon: resource.icon, external: resource.external %}
   {% endfor %}
 </section>
 <section class="{{sidePadding}} pb-4">
-  {% render 'h2', text: "Our partners", classes: "text-center" %}
+  {% include 'h2', text: "Our partners", classes: "text-center" %}
   <div class="flex flex-col lg:flex-row justify-center items-center">
   {% for partner in partners %}
     <a class="px-4 h-custom-228 flex flex-col justify-center items-center" aria-label={{partner.name}} href={{partner.url}} 
