@@ -1,5 +1,6 @@
 [
   { "key": "#about", "title": "About" },
   { "key": "#how-it-works", "title": "How it works" },
-  { "key": "#contact", "title": "Contact" }
+  { "key": "#contact", "title": "Contact" },
+  { "key": "https://www.etsy.com/shop/MyrkwoodMushrooms/", "title": "Shop" }
 ]

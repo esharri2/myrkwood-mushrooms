@@ -10,7 +10,11 @@
                 class="flex justify-center items-center flex-wrap">
                 {% render 'navigation', navigation: navigation, page: page %}
             </div>
-            <a aria-label="Myrkwood Mushrooms Instagram" class="fixed right-2 top-2 hidden md:block" target="_blank" rel="noreferrer" href="https://www.instagram.com/myrkwood_mushrooms/">{% render 'icons', type: "instagram" %}</a>
+            <div class="fixed right-2 top-2 hidden md:flex items-center">
+               <!-- <a aria-label="Etsy" title="Etsy" target="_blank" rel="noreferrer" href="https://www.etsy.com/shop/MyrkwoodMushrooms/">{% render 'icons', type: "etsy-short" %}</a> -->
+               <!-- <span class="block pl-1 mr-1 border-l border-dark"></span> -->
+               <a aria-label="Myrkwood Mushrooms Instagram" title="Instagram" target="_blank" rel="noreferrer" href="https://www.instagram.com/myrkwood_mushrooms/">{% render 'icons', type: "instagram" %}</a>
+            </div>
         </header>
         <main
             class="min-h-screen"

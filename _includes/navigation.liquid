@@ -1,6 +1,6 @@
 <nav>
     <ul
-        class="flex font-display uppercase sm:text-xl">
+        class="flex font-display items-center uppercase text-xs sm:text-lg gap-1">
         {% for item in navigation %}
             {% if page.filePathStem == item.key %}
                 {% assign activeClasses = 'underline'%}
@@ -10,11 +10,10 @@
                 {% assign currentAttribute = null %}
             {% endif %}
             <li
-                class="px-2 py-2 first:pl-0 last:pr-0 text-center {{activeClasses}}"
+                class="py-2 text-center {{activeClasses}}"
                 {{currentAttribute}}>
-                <a
-                    href="{{item.key}}">{{item.title}}
-                </a>
+                <a class="block {% if item.key contains 'https'%} px-1 rounded-sm bg-dark text-accent-1 {% endif %}" {% if item.key contains 'https' %} target="_blank" {% endif %}
+                    href="{{item.key}}">{{item.title}}</a>
             </li>
         {% endfor %}
     </ul>

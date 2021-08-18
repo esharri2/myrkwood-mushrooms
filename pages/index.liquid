@@ -4,6 +4,10 @@ resource_links:
     icon: "instagram"
     url: "https://www.instagram.com/myrkwood_mushrooms/"
     external: true
+  - title : "Shop our products on Etsy"
+    icon: "etsy-short"
+    url: "https://www.etsy.com/shop/MyrkwoodMushrooms"
+    external: true
   - title : "Download our informational flier"
     icon: "download"
     url: "/documents/myrkwood_mushrooms_info_sheet.png"
@@ -17,6 +21,11 @@ partners:
   - name: "Bull City Gardens"
     image: 'bullcitygardens.png'
     url: "http://bullcitygardens.com/"
+  - name: "Buddha Bee Apiary"
+    image: 'bblogo.png'
+    label: "Buddha Bee Apiary"
+    url: "https://www.buddhabeeapiary.com/"
+    width: 160
 prices:
   - title: "Old Faithful"
     price: "$200"
@@ -217,14 +226,19 @@ sidePadding: px-1
   {% render 'h2', text: "Our partners", classes: "text-center" %}
   <div class="flex flex-col lg:flex-row justify-center items-center">
   {% for partner in partners %}
-    <a class="px-4 h-custom-228 flex items-center" aria-label={{partner.name}} href={{partner.url}}>
+    <a class="px-4 h-custom-228 flex flex-col justify-center items-center" aria-label={{partner.name}} href={{partner.url}} 
+        title="{{partner.name}}"
+    >
       <img
-        class="transition-all transform hover:scale-125"
+        class="transition-all transform hover:scale-110"
         target="_blank"
         rel="noreferrer"
         alt="Logo for {{partner.name}}"
         src="images/{{partner.image}}"
-        width="200" />
+        width="{{partner.width | default: 200}}" />
+        {% if partner.label %}
+         <p style="position:relative;top:-18px">Buddha Bee Apiary</p>
+        {% endif %}
     </a>
   {% endfor%}
   </div>  
