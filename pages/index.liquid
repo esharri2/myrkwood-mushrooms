@@ -140,7 +140,7 @@ sidePadding: px-1
   </div>
 </section>
 <section
-  class="min-h-screen {{sidePadding}} pt-4 lg:pt-6 pb-6"
+  class="min-h-screen {{sidePadding}} pt-4 lg:pt-6 pb-5"
   id="how-it-works">
   <div
     class="container flex flex-col lg:flex-row lg:items-center">
@@ -167,12 +167,12 @@ sidePadding: px-1
       <div
         class="p-2"
         style="max-width:375px">
-        {% picture'images/beds.jpg' 'alt text' 'shadow rounded-sm' '350px' %}
+        {% picture'images/beds.jpg' 'mushrooms beds' 'shadow rounded-sm' '350px' %}
       </div>
       <div
         class="p-2 justify-self-end self-end"
         style="max-width: 450px">
-        {% picture'images/logs.jpg' 'alt text' 'shadow rounded-sm' '450px'%}
+        {% picture'images/logs.jpg' 'mushroom logs' 'shadow rounded-sm' '450px'%}
       </div>
     </div>
   </div>
@@ -187,6 +187,19 @@ sidePadding: px-1
           {% include 'price-card', title: service.title, price: service.price, description: service.description %}
         {% endfor %}
       </div>
+    <div
+      class="flex py-2 pb-0 flex-col justify-center lg:py-5 lg:pb-0 lg:flex-row">
+      <div
+        class="flex-none py-2 lg:pb-0 lg:mr-2"
+        style="">
+        {% picture'images/agaric.jpg' 'field argaric mushrooms' 'shadow rounded-sm' '300px' %}
+      </div>
+      <div
+        class="flex-none lg:py-2 lg:pb-0 lg:ml-2"
+        style="max-height:500px">
+        {% picture'images/oyster.jpg' 'oyster mushrooms' 'shadow rounded-sm' '300px'%}
+      </div>
+    </div>
     </div>
   </div>
   {% comment %}
